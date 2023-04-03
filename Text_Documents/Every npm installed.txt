@@ -1,0 +1,25 @@
+Created React App - npx create-react-app my-app
+
+React Router Dom (For client-side routing in a single-page application, you can use react-router-dom) - npm install react-router-dom
+
+Axios (For making HTTP requests to a server or API, you can use axios.) - npm install axios
+
+Redux (For state management, you can use redux and react-redux.) - npm install redux , npm install react-redux
+
+Formik and Yup (For handling forms and validation, you can use formik and yup.) - npm install formik / npm install yup
+
+*********** Styling UI *************
+Material UI (For styling your components, you can use material-ui.) - 
+- default installation - npm install @mui/material @emotion/react @emotion/styled
+- with styled-components - npm install @mui/material @mui/styled-engine-sc styled-components
+
+Chakra UI - npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+
+Bootstrap - npm install bootstrap@5.3.0-alpha3
+
+Ant Design - npm install antd
+(To add styles, you will also need to copy- import 'antd/dist/antd.css' / import 'antd/dist/reset.css';)
+
+
+
+
