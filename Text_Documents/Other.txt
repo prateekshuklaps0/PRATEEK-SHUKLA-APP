@@ -1,2 +1,45 @@
 Website for Background Images - 
      https://www.freepik.com/vectors/background
+
+
+To test Responsiveness - 
+     https://screenfly.org/#u=https%3A//impolite-support-6582.netlify.app/&w=1920&h=1080&a=4
+
+
+
+
+Media Querries - 
+/* Extra small devices (phones) */
+@media only screen and (max-width: 575.98px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (desktops) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Extra large devices (large desktops) */
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+}
