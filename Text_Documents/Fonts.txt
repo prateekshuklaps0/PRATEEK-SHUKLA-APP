@@ -1,0 +1,21 @@
+*******  Link  ******** 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Cabin+Sketch&family=Lily+Script+One&family=Merienda:wght@600&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+
+
+
+
+*******  Fonts  ******** 
+font-family: "Merienda", cursive;
+
+font-family: "Lily Script One", cursive;
+
+font-family: "Cabin Sketch", cursive;
+
+font-family: "Alkatra", cursive;
+
+font-family: 'Signika Negative', sans-serif;
+
+
+

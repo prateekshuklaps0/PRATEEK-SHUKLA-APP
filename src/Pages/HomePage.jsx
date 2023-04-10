@@ -37,9 +37,23 @@ import {
 } from "@chakra-ui/react";
 
 // Other Components Import ***********************
+import { NavBar } from "../Components/NavBar";
 
 // Main Function *********************************
 const HomePage = () => {
-  return <div>This istyurtyutr Homepage</div>;
+  return (
+    <div>
+      <NavBar />
+      <div
+        style={{
+          textAlign: "center",
+        }}
+      >
+        {new Array(40).fill(1).map((item, ind) => {
+          return <h1 key={ind}>This is test Div {ind}</h1>;
+        })}
+      </div>
+    </div>
+  );
 };
 export default HomePage;

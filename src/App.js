@@ -21,14 +21,13 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setAnim((prev) => false);
-    }, 3000);
+    }, 100);
   }, []);
 
   return (
     <div>
       {showAnim ? (
         <div>
-          {/* <ScrollToTop /> */}
           <LoadingAnim4 />
         </div>
       ) : (
@@ -40,7 +39,6 @@ function App() {
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundAttachment: "fixed",
-            height: "1500px",
           }}
         >
           <AllRoutes />

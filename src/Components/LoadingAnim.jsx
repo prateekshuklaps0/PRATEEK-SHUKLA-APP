@@ -3,6 +3,7 @@ import {
   Heading,
   Spinner,
   Checkbox,
+  Img,
   Alert,
   AlertIcon,
   AlertTitle,
@@ -38,11 +39,14 @@ import { ScrollToTop } from "react-scroll-to-top";
 
 import styles from "../ComponentsCSS/LoadingAnim.module.css";
 
-// Import Gifs
+// Import Images
+import LoadingImg from "../Images/MyPic/MyPic1.png";
+import BackgroundImg from "../Images/BackgroundImages/4.jpg";
 import Gif1 from "../Images/Gifs/1.gif";
 import Gif2 from "../Images/Gifs/2.gif";
 import Gif3 from "../Images/Gifs/3.gif";
 import PageNotFoundGif from "../Images/Gifs/PageNotFoundGif.gif";
+import { red } from "@mui/material/colors";
 
 const LoadingAnim1 = () => {
   return (
@@ -60,11 +64,6 @@ const LoadingAnim2 = () => {
       <Center h="100%">
         <img className={styles.Img} src={Gif2} alt="Example GIF" />
       </Center>
-      {/* <Skeleton
-        startColor="blue.500"
-        endColor="grey.500"
-        height="100vh"
-      ></Skeleton> */}
     </div>
   );
 };
@@ -81,12 +80,21 @@ const LoadingAnim3 = () => {
 
 const LoadingAnim4 = () => {
   return (
-    <div>
+    <div
+      className="ImageLoadCont"
+      style={{
+        backgroundImage: `url(${BackgroundImg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed",
+        height: "1500px",
+      }}
+    >
       <Progress height="5px" size="xs" isIndeterminate />
-
       <div className={styles.animatedDiv}>
         <Center h="100%">
-          <h1>Prateek Shukla</h1>
+          <Img src={LoadingImg} borderRadius="full" boxSize="150px" />
         </Center>
       </div>
     </div>
