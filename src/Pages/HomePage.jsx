@@ -1,9 +1,11 @@
 // Libraries *************************************
+import styles from "../ComponentsCSS/HomePage.module.css";
 import { useState, useEffect } from "react";
 import {
   Image,
   Heading,
   Spinner,
+  Badge,
   Checkbox,
   Alert,
   AlertIcon,
@@ -35,34 +37,9 @@ import {
 } from "@chakra-ui/react";
 
 // Other Components Import ***********************
-import {
-  LoadingAnim1,
-  LoadingAnim2,
-  LoadingAnim3,
-} from "../Components/LoadingAnim";
-import { NumGenerator } from "../Components/NumGenerator";
 
 // Main Function *********************************
 const HomePage = () => {
-  const [isloading, setisloading] = useState(true);
-
-  useEffect(() => {
-    setisloading((prev) => true);
-    const timer = setTimeout(() => {
-      setisloading((prev) => false);
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  document.title = `Prateek Shukla`;
-  return isloading ? (
-    <div>{NumGenerator(1) % 2 != 0 ? <LoadingAnim1 /> : <LoadingAnim2 />}</div>
-  ) : (
-    <Box>
-      <Heading as="h1" size="xl">
-        THIS IS HOMEPAGE
-      </Heading>
-    </Box>
-  );
+  return <div>This istyurtyutr Homepage</div>;
 };
 export default HomePage;

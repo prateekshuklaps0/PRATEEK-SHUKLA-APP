@@ -1,9 +1,7 @@
 .animatedDiv {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
 .Img {
-  width: 30%;
+  width: 20%;
 }

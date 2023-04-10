@@ -8,6 +8,9 @@ Redux (For state management, you can use redux and react-redux.) - npm install r
 
 Formik and Yup (For handling forms and validation, you can use formik and yup.) - npm install formik / npm install yup
 
+react-scroll-to-top (To prevent default Scrolled Down Page Loading) - npm install react-scroll-to-top
+
+
 *********** Styling UI *************
 Material UI (For styling your components, you can use material-ui.) - 
 - default installation - npm install @mui/material @emotion/react @emotion/styled

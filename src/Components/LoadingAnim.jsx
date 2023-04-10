@@ -23,7 +23,9 @@ import {
   CircularProgress,
   CircularProgressLabel,
   Fade,
+  Center,
   ScaleFade,
+  Text,
   Slide,
   SlideFade,
   Skeleton,
@@ -31,6 +33,7 @@ import {
   Progress,
   Input,
 } from "@chakra-ui/react";
+import { ScrollToTop } from "react-scroll-to-top";
 // *************************
 
 import styles from "../ComponentsCSS/LoadingAnim.module.css";
@@ -44,7 +47,9 @@ import PageNotFoundGif from "../Images/Gifs/PageNotFoundGif.gif";
 const LoadingAnim1 = () => {
   return (
     <div className={styles.animatedDiv}>
-      <img className={styles.Img} src={Gif1} alt="Example GIF" />
+      <Center h="100%">
+        <img className={styles.Img} src={Gif1} alt="Example GIF" />
+      </Center>
     </div>
   );
 };
@@ -52,7 +57,14 @@ const LoadingAnim1 = () => {
 const LoadingAnim2 = () => {
   return (
     <div className={styles.animatedDiv}>
-      <img className={styles.Img} src={Gif2} alt="Example GIF" />
+      <Center h="100%">
+        <img className={styles.Img} src={Gif2} alt="Example GIF" />
+      </Center>
+      {/* <Skeleton
+        startColor="blue.500"
+        endColor="grey.500"
+        height="100vh"
+      ></Skeleton> */}
     </div>
   );
 };
@@ -60,7 +72,23 @@ const LoadingAnim2 = () => {
 const LoadingAnim3 = () => {
   return (
     <div className={styles.animatedDiv}>
-      <img className={styles.Img} src={Gif3} alt="Example GIF" />
+      <Center h="100%">
+        <img className={styles.Img} src={Gif3} alt="Example GIF" />
+      </Center>
+    </div>
+  );
+};
+
+const LoadingAnim4 = () => {
+  return (
+    <div>
+      <Progress height="5px" size="xs" isIndeterminate />
+
+      <div className={styles.animatedDiv}>
+        <Center h="100%">
+          <h1>Prateek Shukla</h1>
+        </Center>
+      </div>
     </div>
   );
 };
@@ -73,4 +101,10 @@ const PageNotFoundAnim = () => {
   );
 };
 
-export { LoadingAnim1, LoadingAnim2, LoadingAnim3, PageNotFoundAnim };
+export {
+  LoadingAnim1,
+  LoadingAnim2,
+  LoadingAnim3,
+  LoadingAnim4,
+  PageNotFoundAnim,
+};
