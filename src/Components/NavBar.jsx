@@ -1,6 +1,9 @@
 import styles from "../ComponentsCSS/NavBar.module.css";
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import HamburgerMenu from "./HamburgerMenu";
+
+// Chakra UI Imports **********************************
 import {
   Image,
   Heading,
@@ -42,20 +45,30 @@ function NameLogo() {
 }
 
 // Right Navigations  ******************************************
-function RightNavLists() {
+const NavOptionsList = [
+  { title: "About Me", to: "/about" },
+  { title: "Projects", to: "/projects" },
+  { title: "Let's Talk", to: "/chat" },
+];
+const RightNavLists = () => {
   return (
-    <div className={styles.rightLinks}>
-      <NavLink to="/about">About Me</NavLink>
-      <NavLink to="/projects">Projects</NavLink>
-      <NavLink to="/social">Social</NavLink>
-      <NavLink to="/chat">Let's Talk</NavLink>
+    <div className={styles.rightLinksCont}>
+      {NavOptionsList.map((item, ind) => (
+        <NavLink to={item.to} data-testid="nav-link" key={ind + item.title}>
+          <h1 className="NavLinkItems">{item.title}</h1>
+        </NavLink>
+      ))}
     </div>
   );
-}
+};
 
 // Hamburger Menu  ******************************************
-function HamburgerMenu() {
-  return <div className={styles.HamburgerMenu}>HamburgerMenu</div>;
+function HamburgerMenuCont() {
+  return (
+    <div className={styles.HamburgerMenu}>
+      <HamburgerMenu />
+    </div>
+  );
 }
 
 function NavBar() {
@@ -63,7 +76,7 @@ function NavBar() {
     <div className={styles.NavCont}>
       <NameLogo />
       <RightNavLists />
-      <HamburgerMenu />
+      <HamburgerMenuCont />
     </div>
   );
 }

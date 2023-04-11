@@ -12,7 +12,7 @@ import {
   LoadingAnim3,
   LoadingAnim4,
 } from "./Components/LoadingAnim";
-import BackgroundImg from "./Images/BackgroundImages/1.jpg";
+import BackgroundImg from "./Images/BackgroundImages/4.jpg";
 
 // *************** Main Function *****************
 function App() {

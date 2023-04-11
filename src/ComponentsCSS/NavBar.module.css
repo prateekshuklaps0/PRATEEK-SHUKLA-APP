@@ -7,29 +7,35 @@
   align-items: center;
   justify-content: space-between;
 
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
   height: 50px;
 }
 
 .NameText {
+  color: white;
 }
 
-.rightLinks {
+.rightLinksCont {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 400px;
-  color: rgb(255, 255, 255);
-
-  font-family: "Merienda", cursive;
-  font-family: "Lily Script One", cursive;
-  font-family: "Cabin Sketch", cursive;
-  font-family: "Alkatra", cursive;
+  min-width: 300px;
 }
 
+.rightLinksCont h1 {
+  color: white;
+}
+.rightLinksCont h1:hover {
+  color: rgba(255, 255, 255, 0.845);
+}
+
+/* Hamburger CSS */
 .HamburgerMenu {
   display: none;
+}
+.HamOptionsCont {
+  background-color: red;
 }
 
 /* Extra small devices (phones) */
@@ -41,7 +47,7 @@
   .NameText {
   }
 
-  .rightLinks {
+  .rightLinksCont {
     display: none;
   }
 
@@ -59,7 +65,7 @@
   .NameText {
   }
 
-  .rightLinks {
+  .rightLinksCont {
     display: none;
   }
 
