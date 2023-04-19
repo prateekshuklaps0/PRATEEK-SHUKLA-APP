@@ -1,7 +1,9 @@
 import styles from "../ComponentsCSS/NavBar.module.css";
-import { useState, useEffect } from "react";
+
+import { useState, useEffect, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import HamburgerMenu from "./HamburgerMenu";
+import { Context } from "../Contexts/Context";
 
 // Chakra UI Imports **********************************
 import {
@@ -41,7 +43,16 @@ import {
 
 // Name Logo ******************************************
 function NameLogo() {
-  return <h1 className={styles.NameText}>Prateek</h1>;
+  const { LogoFont } = useContext(Context);
+  return (
+    <NavLink
+      style={{ fontFamily: LogoFont }}
+      to="/"
+      className={styles.NameText}
+    >
+      Prateek
+    </NavLink>
+  );
 }
 
 // Right Navigations  ******************************************
@@ -54,8 +65,13 @@ const RightNavLists = () => {
   return (
     <div className={styles.rightLinksCont}>
       {NavOptionsList.map((item, ind) => (
-        <NavLink to={item.to} data-testid="nav-link" key={ind + item.title}>
-          <h1 className="NavLinkItems">{item.title}</h1>
+        <NavLink
+          className={styles.NavLinkComp}
+          to={item.to}
+          data-testid="nav-link"
+          key={ind + item.title}
+        >
+          {item.title}
         </NavLink>
       ))}
     </div>

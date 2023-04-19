@@ -2,11 +2,9 @@ import React, { useContext } from "react";
 import { Route, Redirect } from "react-router-dom";
 
 // Context API *****************
-import { AuthProvider } from "../Contexts/AuthContext";
+// import { AuthProvider } from "../Contexts/Context";
 
 export const PrivateRoute = ({ component: Component, ...rest }) => {
-  const { isAuthenticated } = useContext(AuthProvider);
-
   return (
     <div></div>
     // <Route

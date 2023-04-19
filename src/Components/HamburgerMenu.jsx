@@ -1,6 +1,7 @@
 import styles from "../ComponentsCSS/NavBar.module.css";
 import {
   Drawer,
+  Divider,
   DrawerBody,
   DrawerFooter,
   DrawerHeader,
@@ -20,6 +21,7 @@ import { MenuOutlined } from "@ant-design/icons";
 import { MdBlurOn } from "react-icons/md";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import DrawerImage from "../Images/BackgroundImages/10.jpg";
 
 const NavOptionsList = [
   { title: "About Me", to: "/about" },
@@ -40,27 +42,43 @@ const HamburgerMenu = () => {
 
   return (
     <div>
-      <MdBlurOn onClick={() => handleClick("xs")} size={30} color="white" />
+      {/* Hamburger Icon */}
+      <MdBlurOn
+        className={styles.HamburgerIcon}
+        onClick={() => handleClick("xs")}
+        size={40}
+      />
 
       <Drawer onClose={onClose} isOpen={isOpen} size={size}>
         <DrawerOverlay />
-        <DrawerContent>
+
+        {/* Any Styles needed to apply, apply to this drawerContent */}
+        <DrawerContent
+          style={{
+            backgroundColor: "white",
+            borderBottomLeftRadius: "20px",
+            borderTopLeftRadius: "20px",
+            backgroundImage: `url(${DrawerImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center center",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed",
+          }}
+        >
           <DrawerHeader onClick={() => onClose()}>
             <ArrowRightIcon color="blue" />
           </DrawerHeader>
           <DrawerBody>
-            <div
-              style={{
-                height: "100%",
-              }}
-            >
+            <div className={styles.HamburgerLinkCont}>
               {NavOptionsList.map((item, ind) => (
                 <NavLink
+                  disabled={true}
+                  className={styles.HamburgerNavLinks}
                   to={item.to}
                   data-testid="nav-link"
                   key={ind + item.title}
                 >
-                  <h1 style={{ backgroundColor: "red" }}>{item.title}</h1>
+                  {item.title}
                 </NavLink>
               ))}
             </div>

@@ -11,19 +11,17 @@ import { BrowserRouter } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 
 // Context API *******************************
-import { AuthProvider } from "./Contexts/AuthContext";
+import { ContextProvider } from "./Contexts/Context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <React.StrictMode>
-  <BrowserRouter>
-    <AuthProvider />
-    <ChakraProvider>
-      <App />
-    </ChakraProvider>
-    <AuthProvider />
-  </BrowserRouter>
-  //  </React.StrictMode>
+  <ContextProvider>
+    <BrowserRouter>
+      <ChakraProvider>
+        <App />
+      </ChakraProvider>
+    </BrowserRouter>
+  </ContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

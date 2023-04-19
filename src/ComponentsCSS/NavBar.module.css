@@ -13,29 +13,54 @@
 }
 
 .NameText {
-  color: white;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+}
+.NameText:hover {
+  color: greenyellow;
 }
 
 .rightLinksCont {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-width: 300px;
+  min-width: 330px;
 }
-
-.rightLinksCont h1 {
+.NavLinkComp {
   color: white;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  font-family: "Aboreto", cursive;
 }
-.rightLinksCont h1:hover {
-  color: rgba(255, 255, 255, 0.845);
+.NavLinkComp:hover {
+  color: rgb(201, 255, 253);
 }
 
 /* Hamburger CSS */
 .HamburgerMenu {
   display: none;
 }
-.HamOptionsCont {
-  background-color: red;
+.HamburgerIcon {
+  color: rgb(255, 255, 255);
+}
+.HamburgerLinkCont {
+  font-family: "Signika Negative", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.HamburgerNavLinks {
+  font-size: 20px;
+  padding: 8px 0;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: rgb(63, 63, 63);
+}
+.HamburgerNavLinks:hover {
+  color: orange;
 }
 
 /* Extra small devices (phones) */
@@ -45,6 +70,9 @@
     padding-right: 30px;
   }
   .NameText {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
   }
 
   .rightLinksCont {

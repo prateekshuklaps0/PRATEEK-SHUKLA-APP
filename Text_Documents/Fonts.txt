@@ -1,21 +1,107 @@
 *******  Link  ******** 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Cabin+Sketch&family=Lily+Script+One&family=Merienda:wght@600&family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&family=Jacques+Francois+Shadow&family=Londrina+Outline&family=Train+One&family=Londrina+Shadow&family=Reggae+One&family=Asul&family=Vast+Shadow&family=Goblin+One&family=Amarante&family=Megrim&family=Rubik+Vinyl&family=Rampart+One&family=Bubblegum+Sans&family=Fredericka+the+Great&family=El+Messiri:wght@500&family=Marcellus&family=Expletus+Sans&family=Tilt+Prism&family=Tilt+Prism&family=Alegreya+Sans+SC&family=Cabin+Sketch&family=Lily+Script+One&family=Merienda:wght@600&family=Signika+Negative:wght@300&display=swap&family=PT+Serif&display=swap" rel="stylesheet">
+
+
+
+****** Names **********
+macondo
+Lily Script One
+Tenor Sans
+Merienda
+Monoton
+Cabin Sketch
+Chewy
+Amita
+Fredericka the Great
+Aclonica
+Rye
+Viaoda Libre
+Rubik Moonrocks
+Sniglet
+Tilt Prism
+Henny Penny
+Aladin
+Rubik Vinyl
+Rubik Gemstones
+Rubik Storm
+Rampart One
+Bungee Shade
+Grenze Gotisch
+Raleway Dots
+IM Fell DW Pica
+Shojumaru
+Marhey
+Finger Paint
+Goblin One
+Vast Shadow
+Eater
+Faster One
+Nabla
+Frijole
+Londrina Outline
+Rubik Dirt
+Fontdiner Swanky
+Diplomata
+Metal Mania
+Rubik Marker Hatch
+Lakki Reddy
+Jacques Francois Shadow
+Bungee Outline
 
 
 
 
-*******  Fonts  ******** 
-font-family: "Merienda", cursive;
+*******  Fonts  ********
+font-family: 'Jacques Francois Shadow', cursive;
 
-font-family: "Lily Script One", cursive;
+font-family: 'Londrina Outline', cursive;
 
-font-family: "Cabin Sketch", cursive;
+font-family: 'Train One', cursive;
 
-font-family: "Alkatra", cursive;
+font-family: 'Londrina Shadow', cursive;
+
+font-family: 'Reggae One', cursive;
+
+font-family: 'Vast Shadow', cursive;
+
+font-family: 'Goblin One', cursive;
+
+font-family: 'Amarante', cursive;
+
+font-family: 'Megrim', cursive;
+
+font-family: 'Rubik Vinyl', cursive;
+
+font-family: 'Rampart One', cursive;
+
+font-family: 'Bubblegum Sans', cursive;
+
+font-family: 'Fredericka the Great', cursive;
+
+font-family: 'El Messiri', sans-serif;
+
+font-family: 'Marcellus', serif;
+
+font-family: 'Expletus Sans', cursive;
+
+font-family: 'Tilt Neon', cursive;
+
+font-family: 'Alegreya Sans SC', sans-serif;
+
+font-family: 'Merienda', cursive;
+
+font-family: 'Tilt Prism', cursive;
+
+font-family: 'Lily Script One', cursive;
+
+font-family: 'Cabin Sketch', cursive;
+
+font-family: 'Alkatra', cursive;
 
 font-family: 'Signika Negative', sans-serif;
 
+font-family: 'PT Serif', serif;
 
-
+font-family: 'Aboreto', cursive;

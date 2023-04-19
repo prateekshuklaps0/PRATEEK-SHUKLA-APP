@@ -1,10 +1,10 @@
 // Libraries *************************************
 // import { ScrollToTop } from "react-scroll-to-top";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Image } from "@chakra-ui/react";
 
 // Other Components ******************************
-import { AuthProvider } from "./Contexts/AuthContext";
+import { Context } from "./Contexts/Context";
 import AllRoutes from "./Routes/Routes";
 import {
   LoadingAnim1,
@@ -12,10 +12,10 @@ import {
   LoadingAnim3,
   LoadingAnim4,
 } from "./Components/LoadingAnim";
-import BackgroundImg from "./Images/BackgroundImages/4.jpg";
 
 // *************** Main Function *****************
 function App() {
+  const { AppBG } = useContext(Context);
   const [showAnim, setAnim] = useState(true);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ function App() {
         <div
           className="App"
           style={{
-            backgroundImage: `url(${BackgroundImg})`,
+            backgroundImage: `url(${AppBG.type})`,
             backgroundSize: "cover",
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
