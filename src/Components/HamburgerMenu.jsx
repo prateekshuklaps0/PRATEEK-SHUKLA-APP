@@ -19,9 +19,9 @@ import {
 import { HamburgerIcon, ArrowRightIcon } from "@chakra-ui/icons";
 import { MenuOutlined } from "@ant-design/icons";
 import { MdBlurOn } from "react-icons/md";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { NavLink } from "react-router-dom";
-import DrawerImage from "../Images/BackgroundImages/10.jpg";
+import { Context } from "../Contexts/Context";
 
 const NavOptionsList = [
   { title: "About Me", to: "/about" },
@@ -30,6 +30,7 @@ const NavOptionsList = [
 ];
 
 const HamburgerMenu = () => {
+  const { DrawerImage, DrawerFont } = useContext(Context);
   const [size, setSize] = useState("");
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -56,9 +57,9 @@ const HamburgerMenu = () => {
         <DrawerContent
           style={{
             backgroundColor: "white",
-            borderBottomLeftRadius: "20px",
-            borderTopLeftRadius: "20px",
-            backgroundImage: `url(${DrawerImage})`,
+            borderBottomLeftRadius: "15px",
+            borderTopLeftRadius: "15px",
+            backgroundImage: `url(${DrawerImage.type})`,
             backgroundSize: "cover",
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
@@ -75,6 +76,7 @@ const HamburgerMenu = () => {
                   disabled={true}
                   className={styles.HamburgerNavLinks}
                   to={item.to}
+                  style={{ fontFamily: DrawerFont }}
                   data-testid="nav-link"
                   key={ind + item.title}
                 >

@@ -30,7 +30,7 @@ Icons - npm install --save @ant-design/icons
 
 React Icons - npm install react-icons / npm install react-icons --save
 
-
+Vercel (For deploying) - npm i -g vercel
 
 
 

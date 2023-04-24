@@ -87,9 +87,27 @@ function HamburgerMenuCont() {
   );
 }
 
+// Main Container
 function NavBar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      if (scrollTop > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={styles.NavCont}>
+    <div className={isScrolled ? styles.NavContBlurred : styles.NavCont}>
       <NameLogo />
       <RightNavLists />
       <HamburgerMenuCont />

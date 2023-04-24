@@ -2,14 +2,28 @@
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 800;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  position: fixed;
   padding-left: 100px;
   padding-right: 100px;
   height: 50px;
+}
+.NavContBlurred {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 800;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
 }
 
 .NameText {
@@ -56,7 +70,6 @@
   padding: 8px 0;
   border: none;
   outline: none;
-  font-weight: 600;
   color: rgb(63, 63, 63);
 }
 .HamburgerNavLinks:hover {
@@ -66,6 +79,10 @@
 /* Extra small devices (phones) */
 @media only screen and (max-width: 575.98px) {
   .NavCont {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .NavContBlurred {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -87,6 +104,10 @@
 /* Small devices (tablets) */
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
   .NavCont {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .NavContBlurred {
     padding-left: 35px;
     padding-right: 35px;
   }

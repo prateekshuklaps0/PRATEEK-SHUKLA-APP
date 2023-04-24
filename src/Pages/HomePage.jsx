@@ -37,16 +37,15 @@ import {
 } from "@chakra-ui/react";
 
 // Other Components Import ***********************
-import { NavBar } from "../Components/NavBar";
 
 // Main Function *********************************
 const HomePage = () => {
   return (
     <div>
-      <NavBar />
       <div
         style={{
           textAlign: "center",
+          // backgroundColor: "rgba(69, 155, 254, 0.459)",
         }}
       >
         {new Array(40).fill(1).map((item, ind) => {

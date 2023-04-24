@@ -34,22 +34,18 @@ const ContextProvider = ({ children }) => {
   // App Background Image
   const AppBG = BackGroundImgArray[3];
 
-  const login = () => {
-    // perform authentication logic
-    setIsAuthenticated(true);
-  };
-
-  const logout = () => {
-    // perform logout logic
-    setIsAuthenticated(false);
-  };
-
   // Logo Font - console.log(FontsArray.length);
   const LogoFont = FontsArray[8];
 
+  // Nav Bar Drawer Image
+  const DrawerImage = BackGroundImgArray[9];
+
+  // Nav Bar Drawer Font -  15
+  const DrawerFont = FontsArray[15];
+
   return (
     <Context.Provider
-      value={{ isAuthenticated, login, logout, LogoFont, AppBG }}
+      value={{ isAuthenticated, LogoFont, AppBG, DrawerFont, DrawerImage }}
     >
       {children}
     </Context.Provider>

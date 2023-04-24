@@ -5,6 +5,7 @@ import { Image } from "@chakra-ui/react";
 
 // Other Components ******************************
 import { Context } from "./Contexts/Context";
+import { NavBar } from "./Components/NavBar";
 import AllRoutes from "./Routes/Routes";
 import {
   LoadingAnim1,
@@ -39,8 +40,10 @@ function App() {
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat",
             backgroundAttachment: "fixed",
+            paddingTop: "51px",
           }}
         >
+          <NavBar />
           <AllRoutes />
         </div>
       )}
